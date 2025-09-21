@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores Amarillas 🌼</title>
+  <style>
+    body {
+      background: linear-gradient(to top, #fff9e6, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    .garden {
+      display: flex;
+      gap: 40px;
+    }
+
+    .flower {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      animation: balanceo 3s ease-in-out infinite alternate;
+    }
+
+    .petal {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: #ffeb3b;
+      border-radius: 50%;
+      top: 20px;
+      left: 20px;
+      transform-origin: center;
+    }
+
+    .petal:nth-child(1) { transform: translate(-30px, 0); }
+    .petal:nth-child(2) { transform: translate(30px, 0); }
+    .petal:nth-child(3) { transform: translate(0, -30px); }
+    .petal:nth-child(4) { transform: translate(0, 30px); }
+    .petal:nth-child(5) { transform: translate(-20px, -20px); }
+    .petal:nth-child(6) { transform: translate(20px, -20px); }
+    .petal:nth-child(7) { transform: translate(-20px, 20px); }
+    .petal:nth-child(8) { transform: translate(20px, 20px); }
+
+    .center {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 20px;
+      height: 20px;
+      background: orange;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3) inset;
+    }
+
+    .stem {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      width: 6px;
+      height: 60px;
+      background: green;
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
+
+    @keyframes balanceo {
+      from { transform: rotate(-5deg); }
+      to { transform: rotate(5deg); }
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #e5a000;
+      text-shadow: 1px 1px 2px #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="garden">
+    <div class="flower">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="center"></div>
+      <div class="stem"></div>
+    </div>
+
+    <div class="flower">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="center"></div>
+      <div class="stem"></div>
+    </div>
+
+    <div class="flower">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="center"></div>
+      <div class="stem"></div>
+    </div>
+  </div>
+
+  <h1>🌼 Un ramito de flores amarillas para vos 💛</h1>
+</body>
+</html>
